@@ -1,0 +1,5 @@
+package co.edu.uco.ucobet.generales.application.secondaryports.notificationservice;
+
+public class SendGridService {
+
+}

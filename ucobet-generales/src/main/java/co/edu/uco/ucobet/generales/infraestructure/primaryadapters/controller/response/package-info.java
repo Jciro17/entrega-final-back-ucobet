@@ -1,0 +1,1 @@
+package co.edu.uco.ucobet.generales.infraestructure.primaryadapters.controller.response;

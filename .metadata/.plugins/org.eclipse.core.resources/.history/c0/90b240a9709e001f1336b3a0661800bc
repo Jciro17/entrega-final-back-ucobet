@@ -1,0 +1,5 @@
+package co.edu.uco.ucobet.generales.domain.city.rules;
+
+public interface CityIdDoesNotExistRule extends Domain<UUID> {
+
+}
