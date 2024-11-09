@@ -1,8 +1,0 @@
-package co.edu.uco.ucobet.generales.crosscuting.exception.enums;
-
-public enum Layer {
-	
-	GENERAL,DOMAIN,USERCASE,DATA,CONTROLLER,ENTITY,CROSSCUTTING,DTO,APPLICATION,RULE,EMAIL
-
-
-}

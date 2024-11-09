@@ -8,6 +8,7 @@ class ApiGatewayApplicationTests {
 
 	@Test
 	void contextLoads() {
+		// Esta prueba está actualmente vacía porque normalmente se usa la prueba de carga de contexto 
 	}
 
 }

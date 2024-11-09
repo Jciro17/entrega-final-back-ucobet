@@ -51,7 +51,7 @@ public class RegisterNewCityControllerTest {
 
     @Test
     public void testGetDummy() throws Exception {
-        // Test para obtener el "dummy"
+
         mockMvc.perform(get("/generales/api/v1/cities"))
                 .andExpect(status().isOk())
                 .andExpect(content().json("{\"name\":\"rionegro\",\"state\":\"00000000-0000-0000-0000-000000000000\"}")); // Ajusta el UUID si es necesario
@@ -62,7 +62,6 @@ public class RegisterNewCityControllerTest {
     public void testCrearCityBadRequest() throws Exception {
         RegisterNewCityDto cityDto = RegisterNewCityDto.create("InvalidCity", UUID.randomUUID());
 
-        // Simula una excepción de UcoBetException al registrar
         doThrow(UcoBetException.create("Error técnico", "Error en la creación de la ciudad", new Exception()))
                 .when(registerNewCityInteractor).execute(any());
 
@@ -75,9 +74,9 @@ public class RegisterNewCityControllerTest {
     
     @Test
     void testCreateCityDto() {
-        // Arrange
+
         String expectedName = "Rionegro";
-        UUID expectedState = UUID.randomUUID(); // Genera un UUID aleatorio
+        UUID expectedState = UUID.randomUUID(); 
 
         // Act
         RegisterNewCityDto cityDto = RegisterNewCityDto.create(expectedName, expectedState);

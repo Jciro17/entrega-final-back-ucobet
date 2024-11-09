@@ -1,5 +1,0 @@
-package co.edu.uco.ucobet.generales.infraestructure.secondaryadapters.redis;
-
-public class MessageCatalogServiceImpl {
-
-}

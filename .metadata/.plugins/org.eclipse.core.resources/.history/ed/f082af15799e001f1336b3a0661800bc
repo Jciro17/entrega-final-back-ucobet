@@ -1,5 +1,0 @@
-package co.edu.uco.ucobet.generales.application.secondaryports.repository;
-
-public interface CountryRepository {
-
-}
